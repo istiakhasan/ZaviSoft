@@ -49,7 +49,7 @@ const ClubFooter = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="bg-gradient-to-r from-[#1a1a1a] to-[#222222] px-6 sm:px-12 lg:px-16 pt-16 sm:pt-20 pb-12 sm:pb-20 rounded-b-[60px] relative overflow-hidden">
+      <div className="bg-gradient-to-r from-[#1a1a1a] to-[#222222] px-6 sm:px-12 lg:px-16 pt-16  rounded-b-[60px] relative overflow-hidden">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-white">
           
           {/* About */}
@@ -106,7 +106,7 @@ const ClubFooter = () => {
         </div>
 
         <div className="mt-8 sm:mt-[97px] flex justify-center">
-          <Image alt="Footer Logo" src={FooterLogo} className="w-32 sm:w-40 md:w-48" />
+          <Image alt="Footer Logo" src={FooterLogo} className="" />
         </div>
       </div>
 
