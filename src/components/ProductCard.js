@@ -27,7 +27,7 @@ const ProductCard = ({ item }) => {
 
           <button
             onClick={() => router.push(`/products/${item?.id}`)}
-            className="btn-dark text-[14px] cursor-pointer font-medium mt-auto"
+            className="btn-dark text-[14px] cursor-pointer text-nowrap font-medium mt-auto"
           >
             View product -{" "}
             <span className="text-[#FFA52F]">${item?.price}</span>
