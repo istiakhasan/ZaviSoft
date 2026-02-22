@@ -91,7 +91,7 @@ const Page = () => {
 
       <div className="products mb-[60px]">
         <div className="section-header flex justify-between items-center mb-8">
-          <h2 className="text-[48px] font-semibold uppercase">
+          <h2 className="md:text-[48px] md:text-[34px] font-semibold uppercase">
             You may also like
           </h2>
         </div>

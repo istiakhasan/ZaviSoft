@@ -46,7 +46,7 @@ const CategoriesSection = () => {
   };
 
   return (
-    <div className="mt-[150px] md:px-[60px] px-[16px] py-[90px] bg-[#232321]">
+    <div className=" px-[16px] py-[90px] bg-[#232321]">
       <p className="uppercase font-semibold text-[24px] md:text-[74px] text-[#FFFFFF]">
         Categories
       </p>

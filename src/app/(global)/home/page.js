@@ -6,15 +6,12 @@ import ReviewSection from "../../../components/ReviewSection";
 
 export default function Home() {
   return (
-    <div>
-      <div className="md:mx-[60px] mx-[16px]">
-        <Banner />
-        <ProductsSection />
-      </div>
+
+    <div className="md:mx-[60px] mx-[16px]">
+      <Banner />
+      <ProductsSection />
       <CategoriesSection />
-      
-        <ReviewSection />
-      
+      <ReviewSection />
     </div>
   );
 }

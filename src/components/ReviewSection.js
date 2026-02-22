@@ -35,7 +35,7 @@ const ReviewSection = () => {
   ];
 
   return (
-    <div className="md:mx-[60px] mx-[16px]">
+    <div className="">
       <div
         style={{ marginTop: "128px" }}
         className="mt-[128px] flex justify-between items-center"

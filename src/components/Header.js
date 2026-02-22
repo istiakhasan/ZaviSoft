@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-[10000] md:px-[32px] px-[16px] bg-white md:rounded-[24px] rounded-[12px] shadow-md mt-[32px]">
+    <header className="sticky top-0 md:mx-[60px] mx-[16px] z-[10000] md:px-[32px] px-[16px] bg-white md:rounded-[24px] rounded-[12px] shadow-md mt-[32px]">
       <div className="mx-auto flex items-center justify-between px-4 py-3 md:py-4">
         {/* Left Menu */}
         <div className="flex items-center gap-4 md:gap-6">
