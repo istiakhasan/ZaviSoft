@@ -8,6 +8,7 @@ import {
   removeToCart,
 } from "../redux/feature/cartSlice";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const CartPage = () => {
   const cartItems = useSelector((state) => state.cart);
@@ -147,7 +148,11 @@ const CartPage = () => {
                 <div className="flex gap-6 mt-6 md:mt-8">
                   <Heart className="cursor-pointer" size={26} />
                   <Trash2
-                    onClick={() => dispatch(removeToCart({ index: i }))}
+                    onClick={() => {
+                      dispatch(removeToCart({ index: i }))
+                      toast.error('Product remove from cart')
+                    
+                    }}
                     className="cursor-pointer"
                     size={26}
                   />
@@ -227,7 +232,7 @@ const CartPage = () => {
                 if (!cartItems?.cart?.length) return;
 
                 setShowSuccess(true);
-
+               toast.success('Cart rest successfully...')
                 // Clear cart after small delay (so invoice shows first)
                 setTimeout(() => {
                   dispatch(clearCart());

@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import Providers from "../lib/Provider";
 import { Rubik } from "next/font/google";
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={rubik.className}>
         <Providers>{children}</Providers>
+        <Toaster position="top-right" reverseOrder={false} />
       </body>
     </html>
   );

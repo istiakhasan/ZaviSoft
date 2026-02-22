@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { productAddToCart } from "./../redux/feature/cartSlice";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 
 const sizes = [38, 39, 40, 41, 42, 43, 44, 45, 46, 47];
@@ -105,7 +106,12 @@ export default function ProductDetails({ item }) {
       <div className="mt-12 flex gap-4">
         <button
           disabled={state?.cart?.some((ct) => item?.id === ct?.id)}
-          onClick={() => dispatch(productAddToCart(item))}
+          onClick={() => {
+            dispatch(productAddToCart(item))
+             toast.success("Product added to cart!");
+          
+          }
+          }
           className={`flex-1  text-[#FFFFFF]  py-5 rounded-2xl text-[14px] font-medium ${state?.cart?.some((ct)=>item?.id === ct?.id)?"bg-gray-300":"bg-[#232321] cursor-pointer"}`}
         >
           ADD TO CART
