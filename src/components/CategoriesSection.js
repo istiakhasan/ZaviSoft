@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import ButtonPng from "../assets/Button.png";
-import { useGetAllMainCategoryQuery } from "@/redux/api/categoryApi";
+import { useGetAllMainCategoryQuery } from "../redux/api/categoryApi";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

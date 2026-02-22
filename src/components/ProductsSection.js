@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import ProductCard from "./ProductCard";
-import { useGetAllProductQuery } from "@/redux/api/productApi";
+import { useGetAllProductQuery } from "../redux/api/productApi";
 
 const ProductsSection = () => {
   const {data,isLoading}=useGetAllProductQuery(undefined)
